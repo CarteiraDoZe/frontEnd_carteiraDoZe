@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { Header } from './components/estaticos/header/Header';
 import { Footer } from './components/estaticos/footer/Footer';
-import Home from './paginas/home/Home';
+import { Home } from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import CadastroCarteira from './components/carteira/CadastroCarteira';
