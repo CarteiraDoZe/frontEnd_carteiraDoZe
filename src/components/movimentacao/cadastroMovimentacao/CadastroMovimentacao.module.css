@@ -1,0 +1,58 @@
+.content {
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin: 2rem 1rem;
+    justify-content: space-between;
+    text-align: start;
+    gap: 1rem;
+}
+.icon {
+    background: var(--gray-500);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.saudacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 70vw;
+}
+
+.none{
+content: '';
+width: 41px;
+height: 41px;
+}
+
+.content form {
+margin: 3rem auto 0;
+}
+
+.form {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 2rem;
+width: 70%;
+margin: 0 auto;
+}
+
+/* form :last-child{
+    margin-top: 2.5rem;
+} */
+
+input{
+width: 100%;
+text-align: center;
+}
+
+.content p {
+margin: .5rem 0;
+}

@@ -4,14 +4,16 @@
 .header {
     display: flex;
     align-items: center;
-    margin: 2rem 0;
-    justify-content: space-evenly;
+    margin: 2rem 1rem;
+    justify-content: space-between;
     text-align: start;
     gap: 1rem;
 }
-.header :last-child{
+.none{
     content: '';
-}
+    width: 41px;
+    height: 41px;
+  }
 
 .icon {
     background: var(--gray-500);
@@ -21,12 +23,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
 
 .saudacoes{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    width: 70vw;
 }
 .content form {
 margin: 3rem auto 0;
@@ -37,13 +40,13 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 2rem;
-width: 80%;
+width: 70%;
 margin: 0 auto;
 }
 
-form :last-child{
+/* form :last-child{
     margin-top: 2.5rem;
-}
+} */
 
 input{
 width: 100%;

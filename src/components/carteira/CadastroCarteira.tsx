@@ -7,13 +7,13 @@ export function CadastroCarteira() {
     <div className={styles.content}>
     <header className={styles.header}>
       <div className={styles.icon}>
-        <img src={iconBack} alt="icone de retorno" />
+      <a href="/painel"><img src={iconBack} alt="icone de retorno" /></a>
       </div>
       <div className={styles.saudacoes}>
         <h2>E aí Will,</h2>
         <h2>Bora bater essa meta?</h2>
       </div>
-      <div><></></div>
+      <div className={styles.none}><></></div>
     </header>
     <form>
       <div className={styles.form}>

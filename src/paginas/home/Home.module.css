@@ -4,13 +4,17 @@
     align-items: center;
     gap: 1rem;
     margin: 3rem auto;
-    width: 80%;
+    text-decoration: none;
+    width: 70%;
+}
+.home a{
+    width: 100%;
 }
 .content{
     min-height: 100vh;
 }
 button{
-    min-width: 80%;
+    width: 100%;
 }
 .txtHome{
     margin-top: 5rem;

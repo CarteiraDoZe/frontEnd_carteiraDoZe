@@ -9,10 +9,8 @@ export function Home() {
         <p>A carteira feita para te ajudar no controle financeiro!</p>
       </div>
       <div className={styles.home}>
-          <button type="submit">Entrar</button>
-        {/* <p>ou</p> */}
-          <button type="submit">Cadastrar</button>
-
+        <a href="/login"><button type="submit">Entrar</button></a>
+        <a href="/usuario"> <button type="submit">Cadastrar</button></a>
       </div>
 </div>
   )
