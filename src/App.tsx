@@ -13,7 +13,7 @@ import Resultado from './paginas/resultado/Resultado';
 import CadastroMovimentacao from './components/movimentacao/cadastroMovimentacao/CadastroMovimentacao';
 import DeletarMovimentacao from './components/movimentacao/deletarMovimentacao/DeletarMovimentacao';
 import PainelMovimentacao from './components/movimentacao/painelMovimentacao/PainelMovimentacao';
-import ListaMovimentacao from './components/movimentacao/listarMovimentacao/ListaMovimentacao';
+import ListaMovimentacao from './components/movimentacao/listaMovimentacao/ListaMovimentacao';
 
 import styles from './App.module.css';
 import { Provider } from 'react-redux';
