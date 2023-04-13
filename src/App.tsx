@@ -10,7 +10,7 @@ import Login from './paginas/login/Login';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import CadastroCarteira from './components/carteira/CadastroCarteira';
 import Resultado from './paginas/resultado/Resultado';
-import CadastroMovimentacao from './components/movimentacao/cadastroMovimentacao/CadastroMovimentacao';
+import CadastroMovimentacao from './components/movimentacao/cadastroMovimentacao/cadastroEntrega/CadastroEntrega';
 import DeletarMovimentacao from './components/movimentacao/deletarMovimentacao/DeletarMovimentacao';
 import PainelMovimentacao from './components/movimentacao/painelMovimentacao/PainelMovimentacao';
 import ListaMovimentacao from './components/movimentacao/listarMovimentacao/ListaMovimentacao';
