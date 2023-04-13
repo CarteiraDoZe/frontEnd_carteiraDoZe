@@ -1,12 +1,10 @@
 import React from 'react'
 import styles from './CadastroCarteira.module.css'
 
-function CadastroCarteira() {
+export function CadastroCarteira() {
   return (
     <div className={styles.content}>
     <header className={styles.header}>
-      <div>
-      </div>
       <div>
         <h2>E aí Will,</h2>
         <h2>Bora bater essa meta?</h2>
@@ -25,5 +23,3 @@ function CadastroCarteira() {
   </div>
   )
 }
-
-export default CadastroCarteira
