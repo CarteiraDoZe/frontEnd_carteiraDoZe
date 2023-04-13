@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { Header } from './components/estaticos/header/Header';
 import { Footer } from './components/estaticos/footer/Footer';
 import Home from './paginas/home/Home';
@@ -15,12 +16,15 @@ import PainelMovimentacao from './components/movimentacao/painelMovimentacao/Pai
 import ListaMovimentacao from './components/movimentacao/listarMovimentacao/ListaMovimentacao';
 
 import styles from './App.module.css';
+import { Provider } from 'react-redux';
 
 export function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className={styles.teste}>
+    {/* <Provider store={Storage}> */}
+    <ToastContainer />
       <Router>
         <Header />
         <Routes>
@@ -37,6 +41,7 @@ export function App() {
         </Routes>
         <Footer />
       </Router>
+    {/* // </Provider> */}
     </div>
   )
 }

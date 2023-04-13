@@ -1,6 +1,6 @@
 .teste {
   /* max-width: 1280px; */
-  max-width: 100vw;
+  max-width: 100vw;/* mobile first*/
   
   margin: 0 auto;
   padding: 2rem 0;
