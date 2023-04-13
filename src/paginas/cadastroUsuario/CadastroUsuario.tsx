@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Cadastrousuario.module.css'
 
 
-function CadastroUsuario() {
+export function CadastroUsuario() {
   return (
     <div className={styles.content}>
       <header className={styles.header}>
@@ -28,5 +28,3 @@ function CadastroUsuario() {
     </div>
   )
 }
-
-export default CadastroUsuario

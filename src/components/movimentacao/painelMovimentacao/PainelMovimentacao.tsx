@@ -1,9 +1,13 @@
 import React from 'react'
+import styles from './PainelMovimentacao.module.css'
+import iconBack from '../../../assets/icons/iconBack.svg'
 
-function PainelMovimentacao() {
+export function PainelMovimentacao() {
   return (
-    <div>PainelMovimentacao</div>
+    <div className={styles.content}>
+      <header>
+        <div><img src={iconBack} alt="Voltar" /></div>
+      </header>
+    </div>
   )
 }
-
-export default PainelMovimentacao

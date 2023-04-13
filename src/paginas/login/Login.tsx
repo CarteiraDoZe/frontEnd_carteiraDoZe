@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './Login.module.css'
 
-function Login() {
+export function Login() {
   return (
     <div className={styles.content}>
       <header className={styles.header}>
@@ -29,5 +29,3 @@ function Login() {
     </div>
   )
 }
-
-export default Login

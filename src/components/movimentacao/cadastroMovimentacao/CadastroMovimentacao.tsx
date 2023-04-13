@@ -1,9 +1,7 @@
-import React from 'react'
+import styles from './CadastroMovimentacao.module.css'
 
-function CadastroMovimentacao() {
+export function CadastroMovimentacao() {
   return (
     <div>CadastroMovimentacao</div>
   )
 }
-
-export default CadastroMovimentacao

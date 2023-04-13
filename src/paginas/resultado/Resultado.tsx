@@ -1,9 +1,7 @@
 import React from 'react'
 
-function Resultado() {
+export function Resultado() {
   return (
     <div>Resultado</div>
   )
 }
-
-export default Resultado

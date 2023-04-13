@@ -1,9 +1,7 @@
 import React from 'react'
 
-function DeletarMovimentacao() {
+export function DeletarMovimentacao() {
   return (
     <div>DeletarMovimentacao</div>
   )
 }
-
-export default DeletarMovimentacao

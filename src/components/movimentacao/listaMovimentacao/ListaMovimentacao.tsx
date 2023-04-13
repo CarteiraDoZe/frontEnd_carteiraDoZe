@@ -1,9 +1,7 @@
 import React from 'react'
 
-function ListaMovimentacao() {
+export function ListaMovimentacao() {
   return (
     <div>ListaMovimentacao</div>
   )
 }
-
-export default ListaMovimentacao
