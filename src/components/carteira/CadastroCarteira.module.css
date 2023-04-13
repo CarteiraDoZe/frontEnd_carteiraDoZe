@@ -1,27 +1,53 @@
-.header {
-margin: 2rem 0;
-}
-
 .content {
-min-height: 100vh;
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    justify-content: space-evenly;
+    text-align: start;
+    gap: 1rem;
+}
+.header :last-child{
+    content: '';
 }
 
+.icon {
+    background: var(--gray-500);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.saudacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
 .content form {
-margin: 15vh auto 0;
+margin: 3rem auto 0;
 }
 
 .form {
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: center;
 gap: 2rem;
 width: 80%;
 margin: 0 auto;
 }
 
+form :last-child{
+    margin-top: 2.5rem;
+}
+
 input{
 width: 100%;
+text-align: center;
 }
 
 .content p {

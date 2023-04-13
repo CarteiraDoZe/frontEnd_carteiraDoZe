@@ -1,16 +1,21 @@
 import React from 'react'
 import styles from './CadastroCarteira.module.css'
+import iconBack from '../../assets/icons/iconBack.svg'
 
 export function CadastroCarteira() {
   return (
     <div className={styles.content}>
     <header className={styles.header}>
-      <div>
+      <div className={styles.icon}>
+        <img src={iconBack} alt="icone de retorno" />
+      </div>
+      <div className={styles.saudacoes}>
         <h2>E aí Will,</h2>
         <h2>Bora bater essa meta?</h2>
       </div>
+      <div><></></div>
     </header>
-    <form className="formulario">
+    <form>
       <div className={styles.form}>
       <input id="meta" placeholder="Digite o valor da sua meta" name="meta"/>
       <input id="diaria" placeholder="Digite o valor da sua diária" name="diaria"/>
