@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Home.module.css'
 
-function Home() {
+export function Home() {
   return (
     <div className={styles.content}>
       <div className={styles.txtHome}>
@@ -17,5 +17,3 @@ function Home() {
 </div>
   )
 }
-
-export default Home
