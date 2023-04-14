@@ -17,7 +17,7 @@ import { ListaMovimentacao } from './components/movimentacao/listaMovimentacao/L
 
 import styles from './App.module.css';
 import { Provider } from 'react-redux';
-import store from './store/store';
+import store from './store/Store';
 
 export function App() {
   const [count, setCount] = useState(0)
