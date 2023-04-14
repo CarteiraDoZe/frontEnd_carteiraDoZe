@@ -19,19 +19,14 @@
 }
 .infoRes{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 1rem;
     text-align: left;
     font-size: 1rem;
     font-weight: 700;
-    border-bottom: 1px solid black;
 }
-.infoRes p{
-    width: 60%;
-    border-bottom: 1px solid black;
+.txtRes{
     display: flex;
-}
-.infoRes span{
-    width: 40%;
+    flex-direction: column;
+    gap: .3rem;
 }
