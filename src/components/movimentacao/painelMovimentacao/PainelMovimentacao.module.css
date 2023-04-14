@@ -1,3 +1,96 @@
 .content {
   min-height: 100vh;
 }
+
+.movHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+
+.icon {
+  background: var(--gray-500);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saudacoes {
+  text-align: left;
+  width: 70vw;
+  font-style: italic;
+}
+
+.sair{
+  border-bottom: 1px solid var(--gray-500);
+}
+
+.sair a {
+  color: var(--gray-500);
+  font-weight: normal;
+}
+
+.movMain {
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+.div_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  margin: 0 auto 1rem;
+}
+
+.div_menu>a {
+  width: 6rem;
+}
+
+.div_menu_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+
+  max-width: 6rem;
+  padding: .25rem;
+  height: 5rem;
+  background: var(--yellow-100);
+  border-radius: 8px;
+}
+
+.div_menu_item>img:first-child {
+  width: 20px;
+  margin-bottom: -1.4rem;
+  margin-left: -4.5rem;
+}
+
+.div_menu_item>p {
+  font-size: .6rem;
+  font-weight: normal;
+  letter-spacing: .1rem;
+  color: var(--gray-500);
+}
+
+.div_menu_item>img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.div_btn {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+
+  margin-top: 2rem;
+}
