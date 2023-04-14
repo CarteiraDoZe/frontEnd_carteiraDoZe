@@ -17,31 +17,32 @@ import { ListaMovimentacao } from './components/movimentacao/listaMovimentacao/L
 
 import styles from './App.module.css';
 import { Provider } from 'react-redux';
+import store from './store/store';
 
 export function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className={styles.teste}>
-    {/* <Provider store={Storage}> */}
-    <ToastContainer />
-      <Router>
-        <Header />
-        <Routes>
-          <Route path='/' element={ <Home/> } />
-          <Route path='/login' element={ <Login/> } />
-          <Route path='/usuario' element={ <CadastroUsuario/> } />
-          <Route path='/meta' element={ <CadastroCarteira/> } />
-          <Route path='/resultado' element={ <Resultado /> } />
-          <Route path='/painel' element={ <PainelMovimentacao /> } />
-          <Route path='/cadastro' element={ <CadastroMovimentacao /> } />
-          <Route path='/cadastro/:id' element={ <CadastroMovimentacao /> } />
-          <Route path='/deletar' element={ <DeletarMovimentacao /> } />
-          <Route path='/lista' element={ <ListaMovimentacao /> } />
-        </Routes>
-        <Footer />
-      </Router>
-    {/* // </Provider> */}
+      <Provider store={store}>
+        <ToastContainer />
+        <Router>
+          <Header />
+          <Routes>
+            <Route path='/' element={ <Home/> } />
+            <Route path='/login' element={ <Login/> } />
+            <Route path='/usuario' element={ <CadastroUsuario/> } />
+            <Route path='/meta' element={ <CadastroCarteira/> } />
+            <Route path='/resultado' element={ <Resultado /> } />
+            <Route path='/painel' element={ <PainelMovimentacao /> } />
+            <Route path='/cadastro' element={ <CadastroMovimentacao /> } />
+            <Route path='/cadastro/:id' element={ <CadastroMovimentacao /> } />
+            <Route path='/deletar' element={ <DeletarMovimentacao /> } />
+            <Route path='/lista' element={ <ListaMovimentacao /> } />
+          </Routes>
+          <Footer />
+        </Router>
+      </Provider>
     </div>
   )
 }
