@@ -4,5 +4,5 @@ export interface UsuarioLogin{
     usuario: string
     dataNasc: string
     senha: string
-    token: String
+    token: string
 }
