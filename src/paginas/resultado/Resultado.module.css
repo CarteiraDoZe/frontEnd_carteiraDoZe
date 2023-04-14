@@ -30,6 +30,7 @@
 .infoRes p{
     width: 60%;
     border-bottom: 1px solid black;
+    display: flex;
 }
 .infoRes span{
     width: 40%;
