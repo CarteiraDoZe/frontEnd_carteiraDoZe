@@ -1,5 +1,5 @@
 import { Transacao } from './Transacao';
-import { Carteira } from '.Carteira';
+import { Carteira } from "./Carteira";
 
 export interface Movimentacao {
   id: Number;
