@@ -12,16 +12,30 @@ export function Resultado() {
         </div>
       </header>
       <div className={styles.infoRes}>
-          <p>Meta Mensal:<span>R$3500,00</span></p>
-          <p>Total de entrada:<span>R$500,00</span></p>
-          <p>Total de saida:<span>R$50,00</span></p>
-          <p>Saldo total:<span>R$450,00</span></p>
-          <p>Km Percorrido:<span>80 km</span></p>
-          <p>Ganho/km:<span>R$1,00</span></p>
-          <p>Custo/km:<span>R$0,20</span></p>
-          <p>Saldo/km percorrido:<span>R$0,80</span></p>
-          <p>Para atingir sua meta faltam:<span>R$3050,00</span></p>
-          <p>Km para atingir sua meta:<span>3812 km</span></p>
+        <div className={styles.txtRes}>
+          <p>Meta Mensal: <span>R$3500,00</span></p>
+          <p>Total de entrada: </p>
+          <p>Total de saida: </p>
+          <p>Saldo total: </p>
+          <p>Km Percorrido: </p>
+          <p>Ganho/km: </p>
+          <p>Custo/km: </p>
+          <p>Saldo/km percorrido: </p>
+          <p>Para atingir sua meta faltam: </p>
+          <p>Km para atingir sua meta: </p>
+        </div>
+        <div className={styles.txtRes}>
+          <p>R$3500,00</p>
+          <p>R$500,00</p>
+          <p>R$50,00</p>
+          <p>R$450,00</p>
+          <p>80 km</p>
+          <p>R$1,00</p>
+          <p>R$0,20</p>
+          <p>R$0,80</p>
+          <p>R$3050,00</p>
+          <p>3812 km</p>
+        </div>
       </div>
     </div>
   )
