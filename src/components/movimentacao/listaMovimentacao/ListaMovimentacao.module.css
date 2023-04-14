@@ -1,0 +1,42 @@
+.content {
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    margin: 2rem 1rem;
+    justify-content: space-between;
+    text-align: start;
+    gap: 1rem;
+}
+.icon {
+    background: var(--gray-500);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.saldo{
+    font-weight: 700;
+}
+.infoMov{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+    text-align: left;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.dateMov{
+    width: 20vw;
+}
+
+.tipoTrans{
+    width: 60vw;
+}
+
+.valorMov{
+    width: 10vw;
+}

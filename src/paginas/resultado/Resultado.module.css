@@ -1,0 +1,36 @@
+.content {
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    margin: 2rem 1rem;
+    justify-content: space-between;
+    text-align: start;
+    gap: 1rem;
+}
+.icon {
+    background: var(--gray-500);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.infoRes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 1rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+.infoRes p{
+    width: 60%;
+    border-bottom: 1px solid black;
+}
+.infoRes span{
+    width: 40%;
+}
