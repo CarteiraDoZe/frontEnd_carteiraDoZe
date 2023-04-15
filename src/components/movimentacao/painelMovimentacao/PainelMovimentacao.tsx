@@ -82,15 +82,15 @@ export function PainelMovimentacao() {
           </Link>
         </div>
         <div className={styles.div_btn}>
-          <a href={`/cadastro`}>
+          <Link to={`/cadastro`}>
             <button>Km percorrido</button>
-          </a>
-          <a href="/lista">
+          </Link>
+          <Link to="/lista">
             <button>Extrato</button>
-          </a>
-          <a href="/resultado">
+          </Link>
+          <Link to="/resultado">
             <button>Resultados</button>
-          </a>
+          </Link>
         </div>
       </main>
     </div>
