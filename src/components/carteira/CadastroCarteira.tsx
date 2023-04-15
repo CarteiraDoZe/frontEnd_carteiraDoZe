@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { TokenState } from '../../store/tokens/TokensReducer';
 import { useSelector } from 'react-redux';
 import { buscaId, post, put } from '../../service/Service';
@@ -119,7 +119,7 @@ function back() {
     <div className={styles.content}>
     <header className={styles.header}>
       <div className={styles.icon}>
-      <a href="/painel"><img src={iconBack} alt="icone de retorno" /></a>
+      <Link to="/painel"><img src={iconBack} alt="icone de retorno" /></Link>
       </div>
       <div className={styles.saudacoes}>
         <h2>E aí Will,</h2>

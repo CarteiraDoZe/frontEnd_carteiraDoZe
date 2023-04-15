@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Resultado.module.css'
 import iconBack from '../../../src/assets/icons/iconBack.svg'
+import { Link } from 'react-router-dom'
 
 
 export function Resultado() {
@@ -8,7 +9,7 @@ export function Resultado() {
     <div className={styles.content}>
       <header className={styles.header}>
         <div className={styles.icon}>
-          <a href="/painel"><img src={iconBack} alt="icone de retorno" /></a>
+          <Link to="/painel"><img src={iconBack} alt="icone de retorno" /></Link>
         </div>
       </header>
       <div className={styles.infoRes}>

@@ -94,7 +94,7 @@ export function Login() {
     <div className={styles.content}>
       <header className={styles.header}>
       <div className={styles.icon}>
-        <a href="/"><img src={iconBack} alt="icone de retorno" /></a>
+        <Link to="/"><img src={iconBack} alt="icone de retorno" /></Link>
       </div>
       <div className={styles.infoLogin}>
           <h2>Login</h2>

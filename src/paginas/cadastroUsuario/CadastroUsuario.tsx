@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import styles from './Cadastrousuario.module.css'
 import iconBack from '../../assets/icons/iconBack.svg'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Usuario } from '../../models/Usuario';
 import { cadastro } from "../../service/Service"
 import { toast } from 'react-toastify';
@@ -63,7 +63,7 @@ return (
   <div className={styles.content}>
   <header className={styles.header}>
     <div className={styles.icon}>
-      <a href="/"><img src={iconBack} alt="icone de retorno" /></a>
+      <Link to="/"><img src={iconBack} alt="icone de retorno" /></Link>
     </div>
     <div className={styles.infoUsuario}>
       <h2>Cadastro</h2>
