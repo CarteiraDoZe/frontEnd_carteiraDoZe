@@ -56,7 +56,7 @@ export function PainelMovimentacao() {
               <img src={iconDiaria} alt="" />
               <p>Diária</p>
             </div>
-          </a>
+          </Link>
           <Link to={`/cadastro`}>
             <div className={styles.div_menu_item}>
               <img src={iconMenos} alt="Entrada" />
