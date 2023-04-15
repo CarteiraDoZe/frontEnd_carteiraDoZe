@@ -10,78 +10,79 @@ import iconAbastecimento from '../../../assets/icons/iconAbastecimento.svg'
 import iconAlimentacao from '../../../assets/icons/iconAlimentacao.svg'
 import iconMais from '../../../assets/icons/IconMais.svg'
 import iconMenos from '../../../assets/icons/iconMenos.svg'
+import { Link } from 'react-router-dom'
 
 export function PainelMovimentacao() {
   return (
     <div className={styles.content}>
       <header className={styles.movHeader}>
         <div className={styles.icon}>
-          <a href="/meta">
+          <Link to={`/meta`}>
             <img src={iconProfile} alt="Voltar" />
-          </a>
+          </Link>
         </div>
         <div className={styles.saudacoes}>
           <p>E aí {`Will`},</p>
           <p>Pronto para ameta de hoje?</p>
         </div>
         <div className={styles.sair}>
-          <a href="/">
+          <Link to={`/`}>
             <p>Sair</p>
-          </a>
+          </Link>
         </div>
       </header>
       <main className={styles.movMain}>
         <div className={styles.div_menu}>
-          <a href={`/cadastro`}>
+          <Link to={`/cadastro`}>
             <div className={styles.div_menu_item}>
               <img src={iconMais} alt="Entrada" />
               <img src={iconEntrega} alt="" />
               <p>Entrega</p>
             </div>
-          </a>
-          <a href={`/cadastro`}>
+          </Link>
+          <Link to={`/cadastro`}>
             
             <div className={styles.div_menu_item}>
               <img src={iconMais} alt="Entrada" />
               <img src={iconGorjeta} alt="" />
               <p>Gorjeta</p>
             </div>
-          </a>
+          </Link>
         </div>
         <div className={styles.div_menu}>
-          <a href={`/cadastro`}>
+          <Link to={`/cadastro`}>
             <div className={styles.div_menu_item}>
               <img src={iconMais} alt="Entrada" />
               <img src={iconDiaria} alt="" />
               <p>Diária</p>
             </div>
           </a>
-          <a href={`/cadastro`}>
+          <Link to={`/cadastro`}>
             <div className={styles.div_menu_item}>
               <img src={iconMenos} alt="Entrada" />
               <img src={iconManutencao} alt="" />
               <p>Manutenção</p>
             </div>
-          </a>
+          </Link>
         </div>
         <div className={styles.div_menu}>
-          <a href={`/cadastro`}>
+          <Link to={`/cadastro`}>
             <div className={styles.div_menu_item}>
               <img src={iconMenos} alt="Entrada" />
               <img src={iconAbastecimento} alt="" />
               <p>Abastecimento</p>
             </div>
-          </a>
-          <a href={`/cadastro`}>
+          </Link>
+          <Link to={`/cadastro`}>
             <div className={styles.div_menu_item}>
               <img src={iconMenos} alt="Entrada" />
               <img src={iconAlimentacao} alt="" />
               <p>Alimentação</p>
             </div>
-          </a>
+          </Link>
         </div>
         <div className={styles.div_btn}>
-          <a href="/cadastro">
+          <a href={`/cadastro`}>
             <button>Km percorrido</button>
           </a>
           <a href="/lista">
