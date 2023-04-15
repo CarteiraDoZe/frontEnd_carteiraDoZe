@@ -7,5 +7,5 @@ nome: string
 usuario: string
 dataNasc: string
 senha: string
-carteira?: Carteira
+carteira?: Carteira[] | null
 }
