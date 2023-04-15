@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Home.module.css'
+import { Link } from 'react-router-dom'
 
 export function Home() {
   return (
@@ -9,8 +10,8 @@ export function Home() {
         <p>A carteira feita para te ajudar no controle financeiro!</p>
       </div>
       <div className={styles.home}>
-        <a href="/login"><button type="submit">Entrar</button></a>
-        <a href="/usuario"> <button type="submit">Cadastrar</button></a>
+        <Link to="/login"><button type="submit">Entrar</button></Link>
+        <Link to="/usuario"> <button type="submit">Cadastrar</button></Link>
       </div>
 </div>
   )
