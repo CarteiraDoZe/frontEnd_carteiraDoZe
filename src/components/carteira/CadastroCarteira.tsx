@@ -130,16 +130,16 @@ function back() {
     <form onSubmit={onSubmit}>
       <div className={styles.form}>
       <input 
-        value={carteira.meta } 
+        value={carteira.meta  == 0 ? undefined : carteira.meta} 
         onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCarteira(e)}
         id="meta" 
         placeholder="Digite o valor da sua meta" 
         name="meta"
     />
-      <input id="diaria" placeholder="Digite o valor da sua diária" name="diaria"
-      value={carteira.diaria} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCarteira(e)}/>
+      <input id="diaria"  name="diaria"
+      value={carteira.diaria == 0 ? undefined : carteira.diaria} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCarteira(e)} placeholder="Digite o valor da sua diária"/>
       <input id="valorEntrega" placeholder="Digite o valor da sua entrega" name="valorEntrega"
-      value={carteira.valorEntrega} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCarteira(e)}/>
+      value={carteira.valorEntrega  == 0 ? undefined : carteira.valorEntrega} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCarteira(e)}/>
       <div>
         <button type="submit">Bora!</button>
       </div>
