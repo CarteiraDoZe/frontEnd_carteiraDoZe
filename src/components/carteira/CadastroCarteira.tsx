@@ -37,20 +37,6 @@ const [usuario, setUsuario] = useState<Usuario>({
   senha: ""
 });
 
-// async function findById(id: string) {
-//   await buscaId(`/carteira/${id}`, setCarteira, {
-//     headers: {
-//       Authorization: token,
-//     },
-//   });
-// }
-
-// useEffect(() => {
-//   if(id !== undefined) {
-//     findById(id);
-//   }
-// }, [id]);
-
 function updatedCarteira(e: ChangeEvent<HTMLInputElement>) {
   setCarteira({
     ...carteira,
@@ -92,8 +78,6 @@ async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
           Authorization: token,
         },
       });
-      console.log('CADASTREI UMA CARTEIRA!')
-      console.log(carteira.id)
       toast.success("Meta cadastrada com sucesso", {
         theme: "colored",
       });
@@ -104,12 +88,7 @@ async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
       });
     }
   }
-  // back()  
-  console.log(`ESSE É O ID: ${id}`)
-  console.log(`ESSE É O JSON CARTEIRA: ${carteira.id}`)
-  console.log(carteira)
-  console.log(typeof carteira.id)
-  console.log(carteira.id)
+  back()  
 }
 function back() {
   navigate("/painel");
@@ -136,10 +115,20 @@ function back() {
         placeholder="Digite o valor da sua meta" 
         name="meta"
     />
-      <input id="diaria"  name="diaria"
-      value={carteira.diaria == 0 ? undefined : carteira.diaria} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCarteira(e)} placeholder="Digite o valor da sua diária"/>
-      <input id="valorEntrega" placeholder="Digite o valor da sua entrega" name="valorEntrega"
-      value={carteira.valorEntrega  == 0 ? undefined : carteira.valorEntrega} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCarteira(e)}/>
+      <input 
+      value={carteira.diaria == 0 ? undefined : carteira.diaria} 
+      onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCarteira(e)} 
+      id="diaria"  
+      placeholder="Digite o valor da sua diária"
+      name="diaria"
+      />
+      <input 
+      value={carteira.valorEntrega  == 0 ? undefined : carteira.valorEntrega} 
+      onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCarteira(e)}
+      id="valorEntrega" 
+      placeholder="Digite o valor da sua entrega" 
+      name="valorEntrega" 
+      />
       <div>
         <button type="submit">Bora!</button>
       </div>
