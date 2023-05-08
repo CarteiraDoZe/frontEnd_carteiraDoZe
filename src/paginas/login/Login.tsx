@@ -2,13 +2,12 @@ import React, { ChangeEvent, useEffect, useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 import { useDispatch } from 'react-redux';
-
-import { addId, addToken } from '../../store/tokens/Action';
+import { addId, addToken, addName } from '../../store/tokens/Action';
 import { UsuarioLogin } from '../../models/UsuarioLogin';
 import { login } from '../../service/Service';
-
 import styles from './Login.module.css'
 import iconBack from '../../assets/icons/iconBack.svg'
+
 
 export function Login() {
   let navigate = useNavigate();
@@ -43,10 +42,7 @@ export function Login() {
   }
   
   async function onSubmit(e: ChangeEvent<HTMLFormElement>){
-    console.log("teste")
     e.preventDefault();
-    console.log(userLogin.usuario)
-    console.log(userLogin.senha)
     try{
       setIsLoading(true)
       await login("/usuarios/logar", userLogin, setRespUserLogin)
@@ -86,11 +82,17 @@ export function Login() {
     if(respUserLogin.token !== '') {
       dispatch(addToken(respUserLogin.token))
       dispatch(addId(`${respUserLogin.id}`))
+      dispatch(addName(`${respUserLogin.nome}`))
       navigate('/painel')
     }
   }, [dispatch, navigate, respUserLogin.id, respUserLogin.token])
+  
+
+
+console.log(respUserLogin.nome)
 
   return (
+    
     <div className={styles.content}>
       <header className={styles.header}>
       <div className={styles.icon}>
@@ -132,3 +134,6 @@ export function Login() {
     </div>
   )
 }
+
+
+

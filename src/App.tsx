@@ -30,9 +30,9 @@ export function App() {
           <Header />
           <Routes>
             <Route path='/' element={ <Home/> } />
-            <Route path='/login' element={ <Login/> } />
-            <Route path='/usuario' element={ <CadastroUsuario/> } />
-            <Route path='/meta' element={ <CadastroCarteira/> } />
+            <Route path='/login' element={ <Login /> } />
+            <Route path='/usuario' element={ <CadastroUsuario /> } />
+            <Route path='/meta' element={ <CadastroCarteira /> } />
             <Route path='/resultado' element={ <Resultado /> } />
             <Route path='/painel' element={ <PainelMovimentacao /> } />
             <Route path='/cadastro' element={ <CadastroMovimentacao /> } />

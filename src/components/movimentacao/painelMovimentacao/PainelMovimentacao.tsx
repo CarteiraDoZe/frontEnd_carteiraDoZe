@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './PainelMovimentacao.module.css'
 
 import iconProfile from '../../../assets/icons/iconProfile.svg'
@@ -11,6 +11,9 @@ import iconAlimentacao from '../../../assets/icons/iconAlimentacao.svg'
 import iconMais from '../../../assets/icons/IconMais.svg'
 import iconMenos from '../../../assets/icons/iconMenos.svg'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+import { TokenState } from '../../../store/tokens/TokensReducer'
+import { Usuario } from '../../../models/Usuario'
 
 export function PainelMovimentacao() {
   return (
@@ -22,8 +25,8 @@ export function PainelMovimentacao() {
           </Link>
         </div>
         <div className={styles.saudacoes}>
-          <p>E aí {`Will`},</p>
-          <p>Pronto para ameta de hoje?</p>
+          <p>E aí, Will</p>
+          <p>Pronto para bater a meta de hoje?</p>
         </div>
         <div className={styles.sair}>
           <Link to={`/`}>

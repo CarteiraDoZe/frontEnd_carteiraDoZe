@@ -9,17 +9,23 @@ import { Carteira } from '../../models/Carteira';
 
 import iconBack from '../../assets/icons/iconBack.svg'
 import styles from './CadastroCarteira.module.css'
+import { Login } from '../../paginas/login/Login';
+import { UsuarioLogin } from '../../models/UsuarioLogin';
 
 export function CadastroCarteira() {
+
 let navigate = useNavigate();
 
 const { id } = useParams<{ id: string }>();
 
 const token = useSelector<TokenState, TokenState["token"]>(
-(state) => state.token
-);
+(state) => state.token);
 
-const userId = useSelector<TokenState, TokenState["id"]>((state) => state.id);
+const userId = useSelector<TokenState, TokenState["id"]>(
+(state) => state.id);
+
+const userName = useSelector<TokenState, TokenState["name"]>(
+  (state) => state.name);
 
 const [carteira, setCarteira] = useState<Carteira>({
   id: 0,
@@ -31,11 +37,12 @@ const [carteira, setCarteira] = useState<Carteira>({
 
 const [usuario, setUsuario] = useState<Usuario>({
   id: +userId,
-  nome: "",
+  nome: userName,
   usuario: "",
   dataNasc: "",
   senha: ""
 });
+
 
 function updatedCarteira(e: ChangeEvent<HTMLInputElement>) {
   setCarteira({
@@ -94,15 +101,16 @@ function back() {
   navigate("/painel");
 }
 
-  return (
-    <div className={styles.content}>
+
+return (
+  <div className={styles.content}>
     <header className={styles.header}>
       <div className={styles.icon}>
       <Link to="/painel"><img src={iconBack} alt="icone de retorno" /></Link>
       </div>
       <div className={styles.saudacoes}>
-        <h2>E aí Will,</h2>
-        <h2>Bora bater essa meta?</h2>
+        <h2>E aí, {usuario.nome}</h2>
+        <h2>Deseja atualizar a sua meta?</h2>
       </div>
       <div className={styles.none}><></></div>
     </header>
